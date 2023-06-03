@@ -17,10 +17,10 @@
         </p>
       </div>
 
-      <div class="content" id="survey-form">
+      <div class="content">
         <form method="post" action="#" id="survey-form">
           <fieldset>
-            <label for="name"
+            <label for="name" id="name-label"
               >Name
               <input
                 id="name"
@@ -29,7 +29,7 @@
                 placeholder="Enter your name"
                 required
             /></label>
-            <label for="email"
+            <label for="email" id="email-label"
               >Email
               <input
                 id="email"
@@ -38,7 +38,7 @@
                 placeholder="Enter your Email"
                 required
             /></label>
-            <label for="number">
+            <label for="number" id="number-label">
               Age (optional)
               <input
                 id="number"
@@ -58,8 +58,67 @@
               </select>
             </label>
           </fieldset>
-          <fieldset></fieldset>
-          <fieldset></fieldset>
+          <fieldset>
+            <label for="personal-account"
+              ><input
+                id="personal-account"
+                type="radio"
+                name="account-type"
+                class="inline"
+                value="personal"
+              />
+              Personal Account</label
+            >
+            <label for="business-account"
+              ><input
+                id="business-account"
+                type="radio"
+                name="account-type"
+                class="inline"
+                value="business"
+              />
+              Business Account</label
+            >
+            <label for="bio"
+              >Provide a bio:
+              <textarea
+                id="bio"
+                name="bio"
+                rows="3"
+                cols="30"
+                placeholder="I love doing..."
+              ></textarea>
+            </label>
+            <label for="terms-and-conditions">
+              <input
+                id="terms-and-conditions"
+                type="checkbox"
+                required
+                name="terms-and-conditions"
+                class="inline"
+                value="tos"
+              />
+              I accept the
+              <a href="https://www.freecodecamp.org/news/terms-of-service/"
+                >terms and conditions</a
+              >
+            </label>
+            <label for="terms-and-conditions">
+              <input
+                id="terms-and-conditions"
+                type="checkbox"
+                required
+                name="terms-and-conditions"
+                class="inline"
+                value="tosagain"
+              />
+              I accept the
+              <a href="https://www.freecodecamp.org/news/terms-of-service/"
+                >terms and conditions</a
+              >
+            </label>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit" />
         </form>
       </div>
     </div>
