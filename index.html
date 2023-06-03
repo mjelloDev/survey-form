@@ -11,13 +11,53 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>freeCodeCamp Survey Form</h1>
-        <h3>Thank you for taking the time to help us improve the platform</h3>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
       </div>
 
-      <div class="content">
-        <form method="post" action="#">
-          <fieldset></fieldset>
+      <div class="content" id="survey-form">
+        <form method="post" action="#" id="survey-form">
+          <fieldset>
+            <label for="name"
+              >Name
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+            /></label>
+            <label for="email"
+              >Email
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your Email"
+                required
+            /></label>
+            <label for="number">
+              Age (optional)
+              <input
+                id="number"
+                name="number"
+                type="number"
+                min="13"
+                max="120"
+                placeholder="Age"
+            /></label>
+            <label for="dropdown"
+              >Which option best describes your current role?
+              <select id="dropdown" name="dropdown">
+                <option value="1">Select current role</option>
+                <option value="2">Student</option>
+                <option value="3">Freelancer</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+          </fieldset>
           <fieldset></fieldset>
           <fieldset></fieldset>
         </form>
